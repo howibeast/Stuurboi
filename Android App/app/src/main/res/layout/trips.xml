@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trips_layout"
+   >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/requests_layout">
+
+        <TextView
+            android:id="@+id/tripDate"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="5dp"
+
+            android:layout_marginRight="5dp"
+            android:text="Trip Date :"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tripPickup"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="114dp"
+
+            android:layout_marginLeft="114dp"
+            android:text="Pickup"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tripDestination"
+            android:layout_width="132dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="start"
+            android:layout_marginStart="109dp"
+            android:layout_marginLeft="109dp"
+
+            android:layout_marginTop="0dp"
+            android:drawableLeft="@drawable/ic_airport_shuttle_black_24dp"
+            android:drawablePadding="10dp"
+            android:text="Destination"
+            android:textAlignment="textStart"
+
+            android:textSize="15dp"
+            android:textStyle="italic" />
+        />
+
+        <TextView
+            android:id="@+id/tripPrice"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="242dp"
+            android:layout_marginLeft="242dp"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:drawableRight="@drawable/ic_navigate_next_black_24dp"
+
+            android:drawablePadding="20dp"
+            android:text="Fare"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tripMile"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="114dp"
+            android:layout_marginLeft="114dp"
+
+            android:layout_marginTop="0dp"
+
+            android:text="Mile"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

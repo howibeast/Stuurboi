@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_chat"
+        android:title="Requests"
+        android:icon="@drawable/bell"
+        app:showAsAction="always"/>
+
+
+    <item android:id="@+id/action_web"
+        android:title="@string/action_whatsapp_web"
+        app:showAsAction="never"/>
+
+</menu>

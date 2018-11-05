@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@drawable/trips_layout">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/requests_layout">
+
+        <TextView
+            android:id="@+id/lblPickup"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="5dp"
+
+
+            android:text="Pick up Location"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/from_title"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="25dp"
+
+            android:text="Pickup"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+
+        <TextView
+            android:id="@+id/lblDestination"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="85dp"
+
+            android:text="Destination Location"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/to_title"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="105dp"
+
+            android:text="Destination"
+            android:textSize="15dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/lblPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentTop="true"
+
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="165dp"
+
+            android:text="Estimation Price"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/request_price"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="185dp"
+
+            android:text="Price"
+            android:textSize="15dp"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:id="@+id/text11"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignBaseline="@+id/request_price"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#B3FFFFFF"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/text12"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignStart="@+id/text11"
+            android:layout_alignLeft="@+id/text11"
+            android:layout_alignTop="@+id/text11"
+            android:textColor="#B3FFFFFF"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/text13"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignStart="@+id/text11"
+            android:layout_alignLeft="@+id/text11"
+            android:layout_alignTop="@+id/text11"
+            android:textColor="#B3FFFFFF"
+            android:text="TextView" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

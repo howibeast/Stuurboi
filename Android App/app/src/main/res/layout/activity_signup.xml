@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stuurboi2"
+    tools:context=".Signup">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="462dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/round_layout"
+        android:stretchColumns="1">
+
+
+        <EditText
+            android:id="@+id/txtTextName"
+            android:layout_width="234dp"
+            android:layout_height="36dp"
+            android:background="@drawable/round"
+            android:gravity="center"
+            android:hint="Name"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.034" />
+
+        <EditText
+            android:id="@+id/txtTextSurname"
+            android:layout_width="234dp"
+            android:layout_height="36dp"
+            android:background="@drawable/round"
+            android:gravity="center"
+            android:hint="Surname"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.133" />
+
+        <EditText
+            android:id="@+id/txtTextEmail"
+            android:layout_width="234dp"
+            android:layout_height="36dp"
+            android:background="@drawable/round"
+            android:gravity="center"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.231" />
+
+        <EditText
+            android:id="@+id/txtTextPhone"
+            android:layout_width="234dp"
+            android:layout_height="36dp"
+            android:background="@drawable/round"
+            android:gravity="center"
+            android:hint="Enter Phone Numbers"
+            android:inputType="text"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.331" />
+
+
+        <RadioGroup
+            android:id="@+id/radioGender"
+            android:layout_width="234dp"
+            android:layout_height="36dp"
+            android:background="@drawable/round"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.432">
+
+            <RadioButton
+                android:id="@+id/radioButtonMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Male"
+                android:textColor="@android:color/black"
+                android:textColorLink="#160120" />
+
+
+            <RadioButton
+                android:id="@+id/radioButtonFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:textColor="@android:color/black"
+                android:textColorLink="#160120" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/radioUser"
+            android:layout_width="234dp"
+            android:layout_height="36dp"
+            android:background="@drawable/round"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.532">
+
+            <RadioButton
+                android:id="@+id/radioButtonClient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Client"
+                android:textColor="@android:color/black"
+                android:textColorLink="#160120" />
+
+
+            <RadioButton
+                android:id="@+id/radioButtonDriver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Driver"
+                android:textColor="@android:color/black"
+                android:textColorLink="#160120" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/txtTextPassword"
+            android:layout_width="234dp"
+            android:layout_height="36dp"
+            android:background="@drawable/round"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.633" />
+
+        <EditText
+            android:id="@+id/txtVerifyTextPassword"
+            android:layout_width="234dp"
+            android:layout_height="36dp"
+            android:background="@drawable/round"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:hint="Corfirm Password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.729" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="159dp"
+            android:layout_height="33dp"
+            android:background="@drawable/round_button"
+            android:text="Register"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.825" />
+
+        <TextView
+            android:id="@+id/textViewLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already Registered?\nLogin Here"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.941" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ProgressBar
+    android:visibility="gone"
+    android:id="@+id/progressBar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true" />
+
+</RelativeLayout>

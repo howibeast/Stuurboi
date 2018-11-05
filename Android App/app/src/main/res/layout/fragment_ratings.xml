@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="stuurboi.com.e_coders.stuurboi.stuurboi.Fragment.RatingsFragment"
+    android:background="@drawable/stuurboi2">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_layout"
+        android:layout_centerHorizontal="true"
+       android:layout_above="@id/Ratings">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="Your Average Ratings"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Ratings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/requests_layout"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <ProgressBar
+
+        android:id="@+id/circularProgressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="50"
+        android:layout_centerInParent="true"
+        android:progressDrawable="@drawable/percentage_layout"
+        android:secondaryProgress="100"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/whitecircle"
+        android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:text="25%"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>

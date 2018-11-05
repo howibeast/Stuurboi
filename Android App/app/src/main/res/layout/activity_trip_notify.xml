@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="35dp"
+    android:background="@drawable/stuurboi2"
+    tools:context=".TripNotify"
+   >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="387dp"
+        android:background="@drawable/round_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/deliveryDecription2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/destinationLocation"
+            android:layout_marginBottom="-59dp"
+            android:gravity="center"
+            android:text="@string/you_have_arrived_to_your_destination_location"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/destinationLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="59dp"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnConfirmDelivery"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btnReportTrip"
+            android:layout_alignLeft="@+id/btnReportTrip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="187dp"
+            android:background="#3380e5"
+            android:text="@string/confirm_delivery"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/delieveryCase1"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="211dp"
+            android:gravity="center"
+            android:text="Receiver Found"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/delieveryCase2"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:text="Receiver Not Found"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnReportTrip"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="59dp"
+            android:layout_marginRight="59dp"
+            android:layout_marginBottom="96dp"
+            android:background="@android:color/holo_orange_dark"
+            android:text="@string/report_client"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

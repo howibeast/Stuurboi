@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="stuurboi.com.e_coders.stuurboi.stuurboi">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/vintagecar"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewPager.DriverPager.TabWOIconActivity" />
+        <activity android:name=".SignIn" />
+        <activity android:name=".ViewPager.DriverTabActivity" />
+        <activity android:name=".Signup" />
+        <activity android:name=".ClientTabActivity" />
+        <activity android:name=".CurrentLocation" />
+        <activity android:name=".PickupNavigation" />
+        <activity android:name=".VerifyRequest" />
+        <activity android:name=".VerifyPickup" />
+        <activity android:name=".Delivery" />
+        <activity android:name=".TripNotify" />
+        <activity android:name=".TripInfo" />
+        <activity android:name=".ViewPager.Slideshow" />
+        <activity android:name=".VerifyTrip" />
+    </application>
+
+</manifest>

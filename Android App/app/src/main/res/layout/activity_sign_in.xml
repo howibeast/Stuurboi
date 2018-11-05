@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stuurboi2"
+    tools:context=".Signup">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="257dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round_layout"
+        android:stretchColumns="1">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f9d7db" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="234dp"
+            android:layout_height="36dp"
+            android:autoLink="email"
+            android:background="@drawable/round"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="User Name"
+            android:inputType="textEmailAddress"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.226"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="234dp"
+            android:layout_height="36dp"
+            android:background="@drawable/round"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.457"
+            tools:ignore="HardcodedText,LabelFor,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtWebLinkRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginBottom="16dp"
+            android:autoLink="web"
+            android:text="Not A Memeber Click Here To Register"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.262"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnSignIn"
+            android:layout_width="159dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/round_button"
+            android:text="Login"
+            app:layout_constraintBottom_toTopOf="@+id/txtWebLinkRegister"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

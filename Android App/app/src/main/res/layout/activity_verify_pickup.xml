@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="35dp"
+    tools:context=".VerifyPickup"
+    android:background="@drawable/stuurboi2">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="387dp"
+        android:background="@drawable/round_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/deliverDecription"
+            android:layout_marginBottom="-59dp"
+            android:gravity="center"
+            android:text="You have arrived to your pickup location :"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/deliverDecription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="59dp"
+            android:text=""
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnConfirmTrip"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/btnCancelTrip"
+            android:layout_alignLeft="@+id/btnCancelTrip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="-1dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_marginBottom="190dp"
+            android:background="#3380e5"
+            android:text="Confirm Pickup"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/inCase"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="207dp"
+            android:gravity="center"
+            android:text="Package Not Found"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/inCase2"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:text="Package Found"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCancelTrip"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="57dp"
+            android:layout_marginRight="57dp"
+            android:layout_marginBottom="103dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="Cancel Trip"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
